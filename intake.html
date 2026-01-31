@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Intake Form | FlyTeach</title>
+  <meta name="description" content="Coaching intake form template for FlyTeach."/>
+  <meta name="theme-color" content="#3aa6ff"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="canonical" href="intake.html"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true">FT</span>
+        <span>
+          FlyTeach
+          <small>Aviation &amp; Aerospace Career Coaching</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="testimonials.html">Reviews</a>
+        <a data-nav href="intake.html">Intake Form</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="contact.html" class="cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="container">
+    <div class="pill"><span class="dot" aria-hidden="true"></span> Intake form</div>
+    <h1>Tell me where you’re at.</h1>
+    <p class="lede">
+      This helps me tailor your session so it’s practical, focused, and relevant to the roles you’re targeting.
+      <br/><span class="small">Privacy note: this form is a website template. By default it does not submit anywhere unless you wire it up to a form service.</span>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="split">
+      <div class="card">
+        <h3>How to use this page</h3>
+        <p class="small">
+          For GitHub Pages, you can either:
+        </p>
+        <ul>
+          <li>Copy the questions into Google Forms, or</li>
+          <li>Use a free form backend (e.g. Formspree / Netlify Forms) and update the form <code>action</code>.</li>
+        </ul>
+        <p class="small" style="margin-top:10px;">
+          If you don’t want any backend yet, you can still use this as a printable questionnaire to send to clients.
+        </p>
+        <div style="margin-top:12px;">
+          <a class="btn" href="contact.html">Prefer to message instead?</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Intake Form (template)</h3>
+
+        <form method="post" action="#">
+          <fieldset>
+            <legend>1. Basic details</legend>
+            <div style="display:grid; gap:10px;">
+              <div>
+                <label for="name">Full name</label>
+                <input id="name" name="name" autocomplete="name" />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" />
+              </div>
+              <div>
+                <label for="location">Current location (City & Country)</label>
+                <input id="location" name="location" autocomplete="address-level2" />
+              </div>
+              <div>
+                <label for="status">Current status</label>
+                <select id="status" name="status">
+                  <option value="">Select…</option>
+                  <option>Undergraduate student</option>
+                  <option>Postgraduate student</option>
+                  <option>Recent graduate</option>
+                  <option>Early-career engineer (0–3 years)</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Education & background</legend>
+            <div style="display:grid; gap:10px;">
+              <div>
+                <label for="degree">Degree(s) studied / currently studying</label>
+                <textarea id="degree" name="degree" placeholder="e.g. BEng Aerospace Engineering, MSc Avionics…"></textarea>
+              </div>
+              <div>
+                <label for="uni">University / institution</label>
+                <input id="uni" name="uni" />
+              </div>
+              <div>
+                <label for="grad">Graduation year (or expected)</label>
+                <input id="grad" name="grad" />
+              </div>
+              <div>
+                <label for="modules">Relevant modules or specialisms</label>
+                <textarea id="modules" name="modules" placeholder="e.g. avionics, systems engineering, control systems…"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Experience</legend>
+            <div class="checkbox-grid" role="group" aria-label="Experience types">
+              <label class="check"><input type="checkbox" name="exp" value="Internship / Industrial placement"/> Internship / Industrial placement</label>
+              <label class="check"><input type="checkbox" name="exp" value="Graduate role"/> Graduate role</label>
+              <label class="check"><input type="checkbox" name="exp" value="Project-based experience"/> Project-based experience</label>
+              <label class="check"><input type="checkbox" name="exp" value="Personal projects"/> Personal projects</label>
+              <label class="check"><input type="checkbox" name="exp" value="No formal experience yet"/> No formal experience yet</label>
+            </div>
+            <div style="margin-top:10px;">
+              <label for="expdesc">Briefly describe your experience (if any)</label>
+              <textarea id="expdesc" name="expdesc" placeholder="Placements, projects, tools used, systems worked on…"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>4. Career goals</legend>
+            <div style="display:grid; gap:10px;">
+              <div>
+                <label for="roles">What roles are you targeting?</label>
+                <textarea id="roles" name="roles" placeholder="e.g. Graduate Systems Engineer, Avionics Engineer…"></textarea>
+              </div>
+              <div>
+                <label>Which sector(s) interest you?</label>
+                <div class="checkbox-grid">
+                  <label class="check"><input type="checkbox" name="sector" value="Civil aviation"/> Civil aviation</label>
+                  <label class="check"><input type="checkbox" name="sector" value="Defence"/> Defence</label>
+                  <label class="check"><input type="checkbox" name="sector" value="Aerospace manufacturing"/> Aerospace manufacturing</label>
+                  <label class="check"><input type="checkbox" name="sector" value="Space"/> Space</label>
+                  <label class="check"><input type="checkbox" name="sector" value="Systems / MBSE"/> Systems / MBSE</label>
+                  <label class="check"><input type="checkbox" name="sector" value="Not sure yet"/> Not sure yet</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>5. What you want help with</legend>
+            <div class="checkbox-grid">
+              <label class="check"><input type="checkbox" name="help" value="CV review / improvement"/> CV review / improvement</label>
+              <label class="check"><input type="checkbox" name="help" value="Interview preparation"/> Interview preparation</label>
+              <label class="check"><input type="checkbox" name="help" value="Technical interview questions"/> Technical interview questions</label>
+              <label class="check"><input type="checkbox" name="help" value="Systems / scenario-based interviews"/> Systems / scenario-based interviews</label>
+              <label class="check"><input type="checkbox" name="help" value="Understanding what recruiters want"/> Understanding what recruiters want</label>
+              <label class="check"><input type="checkbox" name="help" value="Career direction / role clarity"/> Career direction / role clarity</label>
+              <label class="check"><input type="checkbox" name="help" value="Confidence & communication"/> Confidence & communication</label>
+            </div>
+            <div style="margin-top:10px;">
+              <label for="concerns">Specific concerns or struggles</label>
+              <textarea id="concerns" name="concerns" placeholder="e.g. ‘I freeze in interviews’, ‘I don’t know what to revise’…"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>6. Interviews & applications</legend>
+            <div style="display:grid; gap:10px;">
+              <div>
+                <label for="applying">Are you currently applying?</label>
+                <select id="applying" name="applying">
+                  <option value="">Select…</option>
+                  <option>Yes – actively interviewing</option>
+                  <option>Yes – applying but no interviews yet</option>
+                  <option>Not yet, preparing first</option>
+                </select>
+              </div>
+              <div>
+                <label for="feedback">Any interview feedback you’ve received (if any)</label>
+                <textarea id="feedback" name="feedback"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>7. CV & prep</legend>
+            <div style="display:grid; gap:10px;">
+              <div>
+                <label for="cvready">Do you have a CV ready?</label>
+                <select id="cvready" name="cvready">
+                  <option value="">Select…</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Still working on it</option>
+                </select>
+              </div>
+              <div>
+                <label for="deadlines">Upcoming interviews or deadlines?</label>
+                <input id="deadlines" name="deadlines" placeholder="Dates if applicable" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>8. Session focus</legend>
+            <label for="success">What would make this session a success for you?</label>
+            <textarea id="success" name="success" placeholder="Clarity, confidence, structure, reassurance, next steps…"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>9. Anything else</legend>
+            <label for="other">Anything else I should know before the session?</label>
+            <textarea id="other" name="other"></textarea>
+          </fieldset>
+
+          <button class="btn primary" type="button" onclick="alert('This is a template form. To receive submissions, connect a form service and update the form action.');">Submit (template)</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="gap:10px;">
+        <span class="logo" aria-hidden="true">FT</span>
+        <span>FlyTeach<small class="small">Practical, honest coaching for early‑career aviation &amp; aerospace roles.</small></span>
+      </div>
+      <p class="small" style="margin-top:10px;">
+        Remote sessions via video call (Discord by default, or another platform if preferred).
+      </p>
+      <p class="small">
+        <strong>Disclaimer:</strong> Coaching is based on personal industry experience and interview practice. No guarantees of job offers.
+      </p>
+      <p class="small">© 2026 FlyTeach. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="intake.html">Intake Form</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
